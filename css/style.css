@@ -1,3 +1,67 @@
-h1 {
-    color: brown;
+section {
+    text-align: center;
+    padding: 100px 0;
+}
+
+section h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 80px 0;
+}
+
+.box {
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+#sec1 {
+    background: url(../img/top.jpg) no-repeat center center;
+    height: 80vh;
+    background-size: cover;
+}
+
+#sec1 .top_text {
+    font-size: 72px;
+    color: #fff;
+    padding: 20vh 0 0 0;
+}
+
+#sec3 {
+    background-color: lightgray;
+}
+
+#sec3 .profile_img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#sec3 .profile_img:hover {
+    opacity: 0.7;
+}
+
+#sec3 .profile_name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1rem auto 1rem;
+    letter-spacing: 0.1rem;
+}
+
+#sec3 .profile_text {
+    margin: 0 auto;
+    width: 50vw;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+footer {
+    height: 10vh;
+    background-color: rgb(146, 150, 168);
+    width: 100%;
+}
+
+footer .copyright {
+    
 }

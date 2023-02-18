@@ -4,10 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="junのポートフォリオサイトです。">
+    <!-- OGP -->
+    <head prefix="og: https://ogp.me/ns#">
+    <meta property="og:url" content="https://junhata.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="jun by portfolio" />
+    <meta property="og:description" content="junのポートフォリオサイトです。" />
+    <meta property="og:site_name" content="jun by portfolio" />
+    <meta property="og:image" content="img/OGP.png" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:width" content="315" />
+    <title>jun by portfolio</title>
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <!-- NavStart -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">jun by portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sec2">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec3">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec4">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NavEnd -->
+
+      <article>
+        <section id="sec1">
+            <p class="top_text">jun by portfolio</p>
+        </section>
+
+        <section id="sec2">
+            <h1>Works</h1>
+            <!-- グリッド -->
+            <div class="container">
+                <div class="row">
+                    <!-- 1 -->
+                    <div class="card col-md-3 col-sm-12 m-md-5">
+                        <img src="./img/sample1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">sample1</h5>
+                          <p class="card-text">いい感じのサンプル画像。<br>Twitterへアクセスできます。</p>
+                          <a href="https://twitter.com/jun_230109" class="btn btn-primary" target="_blank">Go Twitter</a>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card col-md-3 col-sm-12 m-md-5">
+                        <img src="./img/sample2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card col-md-3 col-sm-12 m-md-5">
+                        <img src="./img/OGP.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- 4 -->
+                    <div class="card col-md-3 col-sm-12 m-md-5">
+                        <img src="./img/sample1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">sample1</h5>
+                          <p class="card-text">いい感じのサンプル画像。<br>Twitterへアクセスできます。</p>
+                          <a href="https://twitter.com/jun_230109" class="btn btn-primary" target="_blank">GO Twitter</a>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="card col-md-3 col-sm-12 m-md-5">
+                        <img src="./img/sample2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="card col-md-3 col-sm-12 m-md-5">
+                        <img src="./img/OGP.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec3">
+            <h1>About</h1>
+            <div class="box">
+                <div class="profile">
+                    <a href="https://twitter.com/jun_230109" target="_blank"><img class="profile_img" src="./img/profile.jpeg" alt=""></a>
+                    <div class="profile_name">jun</div>
+                    <div class="profile_text">北海道札幌市在住。食品にかかわる仕事を行いながら趣味でパソコンに触れていたが、30歳を目前に一念発起し、プログラミングに転向。SUNABACOでプログラミングを学んでいる。</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec4">
+            <h1>Contact</h1>
+            <p>お仕事のご依頼は下記からお願いいたします。</p>
+            <p><a class="btn btn-black" href="mailto:ta.haku19s38&#64;gmail.com">E.mail</a></p>
+        </section>
+
+        <footer>
+            <p class="copyright">Copyright &copy; DEMO all rights reserved.</p>
+        </footer>
+      </article>
+
+    <!-- BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
