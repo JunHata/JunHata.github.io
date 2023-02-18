@@ -17,6 +17,7 @@ section h1 {
     background: url(../img/top.jpg) no-repeat center center;
     height: 80vh;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #sec1 .top_text {
@@ -57,7 +58,7 @@ section h1 {
 
 footer {
     height: 10vh;
-    background-color: rgb(146, 150, 168);
+    background-color: rgb(132, 134, 142);
     width: 100%;
 }
 
