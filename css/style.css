@@ -76,10 +76,10 @@ section h1 {
 
 .top_icon {
     background-color: #000;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
-    padding-top: 30px;
+    padding-top: 20px;
     position: fixed;
     right: 10px;
     bottom: 10px;
