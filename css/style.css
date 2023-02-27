@@ -24,6 +24,7 @@ section h1 {
     font-size: 72px;
     color: #fff;
     padding: 20vh 0 0 0;
+    pointer-events: none;
 }
 
 .card {
@@ -74,10 +75,16 @@ section h1 {
     text-align: center;
 }
 
+.mail:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 .top_icon {
     background-color: #000;
     height: 80px;
     width: 80px;
+    cursor: pointer;
     border-radius: 50%;
     padding-top: 20px;
     position: fixed;
