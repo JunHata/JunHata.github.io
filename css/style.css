@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 section {
     text-align: center;
     padding: 100px 0;
@@ -25,6 +27,15 @@ section h1 {
     color: #fff;
     padding: 20vh 0 0 0;
     pointer-events: none;
+}
+
+#sec2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    justify-content: space-between;
 }
 
 .card {
@@ -72,7 +83,13 @@ section h1 {
     margin: 0 auto;
     width: 50vw;
     line-height: 1.6rem;
-    text-align: center;
+    text-align: justify;
+}
+
+#sec3 .profile_text ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
 }
 
 .mail:hover {
@@ -101,19 +118,21 @@ section h1 {
 
 .top_icon a {
     text-decoration: none;
+    display: block;
     color: #fff;
     font-size: 24px;
     letter-spacing: 0.1rem;
+    text-indent: 0.1rem;
 }
 
 
-footer {
+#footer {
     height: 10vh;
     background-color: rgb(132, 134, 142);
     width: 100%;
 }
 
-footer .copyright {
+#footer .copyright {
     color: white;
     font-size: 12px;
     padding-top: 2.5rem;
