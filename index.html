@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+<head prefix="og: https://ogp.me/ns#">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="junのポートフォリオサイトです。">
   <!-- OGP -->
-
-  <head prefix="og: https://ogp.me/ns#">
-    <meta property="og:url" content="https://junhata.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="jun by portfolio" />
-    <meta property="og:description" content="junのポートフォリオサイトです。" />
-    <meta property="og:site_name" content="jun by portfolio" />
-    <meta property="og:image" content="img/OGP.png" />
-    <meta property="og:image:height" content="600" />
-    <meta property="og:image:width" content="315" />
-    <title>jun by portfolio</title>
-    <!-- BootStrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
+  <meta property="og:url" content="https://junhata.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="jun by portfolio" />
+  <meta property="og:description" content="junのポートフォリオサイトです。" />
+  <meta property="og:site_name" content="jun by portfolio" />
+  <meta property="og:image" content="img/OGP.png" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:image:width" content="315" />
+  <title>jun by portfolio</title>
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
 <body>
   <!-- NavStart -->
@@ -62,15 +63,55 @@
       <div class="container">
         <div class="row">
           <!-- 1 -->
-          <div class="card col-md-3 col-sm-12 m-md-4">
-            <img src="./img/portfolio-screenshot1.png" class="card-img-top" alt="ポートフォリオ1">
-            <div class="card-body">
-              <h5 class="card-title">sample1</h5>
-              <p class="card-text">
-                ポートフォリオサイト。<br>
-                パーソナルビューティーアドバイザーのホームページを想定したサイトです。
-              </p>
-              <a href="https://junhata.github.io/JunHata.github.io-ayami-portfolio/" class="btn btn-dark" target="_blank">Go Portfolio</a>
+          <div class="card col-md-3 col-sm-6 m-md-4">
+            <label class="pop-up--open" for="pop-up">
+              <img class="card-img-top" src="./img/portfolio-screenshot1.png" alt="Ayami_Portfolio TOP スクリーンショット">
+              <div class="card-body">
+                <h5 class="card-title">Ayami_Portfolio</h5>
+                <p class="card-text">
+                  ポートフォリオサイト。<br>
+                  イメージコンサルタントのホームページを想定しています。
+                </p>
+              </div>
+            </label>
+          </div>
+          <input type="checkbox" id="pop-up">
+          <div class="pop-up__overlay">
+            <div class="pop-up__window">
+              <label class="pop-up--close" for="pop-up">×</label>
+              <div class="pop-up__content">
+                <img class="card-img-top" src="img/portfolio-screenshot1.png" alt="Ayami_Portfolio TOP スクリーンショット">
+                <h5 class="card-title">Ayami_Portfolio</h5>
+                <a href="https://junhata.github.io/JunHata.github.io-ayami-portfolio/" class="btn btn-dark" target="_blank">Go Portfolio</a>
+                <ul class="pop-up__text">
+                  <li>
+                    <span><b>制作期間</b></span>
+                    <p>1か月</p>
+                  </li>
+                  <li>
+                    <span><b>担当部分</b></span>
+                    <p>ヒアリング / 企画 / デザイン / コーディング</p>
+                  </li>
+                  <li>
+                    <span><b>制作目的</b></span>
+                    <p>妻(イメージコンサルタント)が、自身の仕事獲得のため・顧客に自分という人間を知ってもらうために自分の略歴やブログ投稿をまとめて見ることができるホームページが必要だったため、制作を行いました。</p>
+                  </li>
+                  <li>
+                    <span><b>ターゲット</b></span>
+                    <p>ファッションに何かしら満足できておらず、イメコン講座を受けたいと考えている10代後半〜50代の女性。</p>
+                  </li>
+                  <li>
+                    <span><b>デザイン</b></span>
+                    <p>ホームページを訪れたターゲットに、妻の人柄や印象をそのまま与えられるように意識しました。</p>
+                    <p>ヘッダーにグラスモーフィズムを採用し、透明感を表現。背景は柔らかなピンクと高貴なイメージを連想させる紫のグラデーションにしました。
+                    <br>ロゴは妻に制作してもらい、その色や雰囲気に合わせた配色を施しています。</p>
+                    <p>トップページは、水たまりのような形の画像をフェードでスライドショーにし、柔らかな印象を与えるようにしています。</p>
+                    <p>フォントは繊細で美しい印象の「こころ明朝体」をベースに、セリフ体で統一しました。</p>
+                  </li>
+                </ul>
+                <p>※このポートフォリオでは、文章・リンク・画像がダミーになっています。</p>
+                <label class="pop-up--close_bottom btn btn-dark" for="pop-up">close</label>
+              </div>
             </div>
           </div>
           <!-- 2 -->
@@ -80,7 +121,6 @@
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a href="#" class="btn btn-dark" target="_blank">Go somewhere</a>
             </div>
           </div>
           <!-- 3 -->
@@ -90,40 +130,6 @@
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a href="#" class="btn btn-dark" target="_blank">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <!-- 4 -->
-          <div class="card col-md-3 col-sm-12 m-md-4">
-            <img src="./img/sample1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">sample1</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-dark" target="_blank">GO somewhere</a>
-            </div>
-          </div>
-          <!-- 5 -->
-          <div class="card col-md-3 col-sm-12 m-md-4">
-            <img src="./img/sample2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-dark" target="_blank">Go somewhere</a>
-            </div>
-          </div>
-          <!-- 6 -->
-          <div class="card col-md-3 col-sm-12 m-md-4">
-            <img src="./img/OGP.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-dark" target="_blank">Go somewhere</a>
             </div>
           </div>
         </div>
@@ -134,21 +140,22 @@
       <h1>About</h1>
       <div class="box">
         <div class="profile">
-          <a href="https://twitter.com/jun_230109" target="_blank"><img class="profile_img" src="./img/profile.jpeg"
-              alt=""></a>
-          <div class="profile_name">jun</div>
-          <div class="profile_text">
+          <a href="https://twitter.com/jun_230109" target="_blank">
+            <img class="profile-img" src="./img/profile.jpeg" alt="jun プロフィール写真">
+          </a>
+          <div class="profile-name">jun</div>
+          <div class="profile-text">
             <p>
               北海道札幌市在住。食品にかかわる仕事を行いながら趣味でパソコンに触れていたが、30歳を目前に一念発起し、プログラミングの世界へ転向。
             </p>
-            <ul>
-              <li>スキル</li>
-              <li>・HTML&CSS</li>
-              <li>・JavaScript (jQuery)</li>
-              <li>・WordPress (PHP)</li>
-              <li>・Python (flask)</li>
-              <li>・SQL</li>
-              <li>・Git</li>
+            <ul class="profile-text__skills">
+              <li><b>スキル</b></li>
+              <li>HTML&CSS</li>
+              <li>JavaScript (jQuery)</li>
+              <li>WordPress (PHP)</li>
+              <li>Python (flask)</li>
+              <li>SQL</li>
+              <li>Git</li>
             </ul>
           </div>
         </div>

@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
 section {
     text-align: center;
     padding: 100px 0;
@@ -40,6 +44,13 @@ section h1 {
 
 .card {
     opacity: 0;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 4px #d3d3d3;
+    transition: 0.5s all;
+}
+
+.card:hover {
+    box-shadow: none;
 }
 
 .fadeInDown {
@@ -56,22 +67,88 @@ section h1 {
 	}
 }
 
-#sec3 {
-    background-color: lightgray;
+.pop-up--open {
+	cursor:pointer;
 }
 
-#sec3 .profile_img {
+#pop-up {
+	display: none;
+}
+
+.pop-up__overlay {
+	display: none;
+}
+
+#pop-up:checked + .pop-up__overlay {
+	display: block;
+	z-index: 9999;
+	background-color: #00000070;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.pop-up__window {
+	width: 90vw;
+	max-width: 1000px;
+    max-height: 90vh;
+	background-color: #ffffff;
+    padding: 2rem;
+	border-radius: 6px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    overflow: scroll;
+}
+
+.pop-up__text {
+    list-style: none;
+	font-size: 16px;
+    text-align: left;
+    padding-left: 0;
+    margin: 2rem auto;
+}
+
+.pop-up__text li span {
+    display: block;
+    width: 20%;
+    min-width: 96px;
+    margin: 3rem 0 1rem 0;
+    border-bottom: 2px solid #000;
+}
+
+.pop-up--close {
+	cursor: pointer;
+	position: absolute;
+	top: -10px;
+	right: 10px;
+	font-size: 48px;
+}
+
+.pop-up--close_bottom {
+	cursor: pointer;
+	font-size: 24px;
+}
+
+#sec3 {
+    background-color: #d3d3d3;
+}
+
+#sec3 .profile-img {
     height: 160px;
     width: 160px;
     border-radius: 50%;
     transition: 0.3s;
 }
 
-#sec3 .profile_img:hover {
+#sec3 .profile-img:hover {
     opacity: 0.7;
 }
 
-#sec3 .profile_name {
+#sec3 .profile-name {
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
@@ -79,17 +156,17 @@ section h1 {
     letter-spacing: 0.1rem;
 }
 
-#sec3 .profile_text {
+#sec3 .profile-text {
     margin: 0 auto;
     width: 50vw;
     line-height: 1.6rem;
     text-align: justify;
 }
 
-#sec3 .profile_text ul {
+#sec3 .profile-text__skills {
     list-style: none;
     padding-left: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .mail:hover {
